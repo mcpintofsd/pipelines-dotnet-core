@@ -9,12 +9,9 @@ trigger:
 pool:
   name: 'Local Pool'
 
-variables:
-  solution: '**/*.sln'
-  buildPlatform: 'Any CPU'
-  buildConfiguration: 'Release'
-
 steps:
+- checkout: self
+
 - task: NuGetToolInstaller@1
 
 - task: NuGetCommand@2
