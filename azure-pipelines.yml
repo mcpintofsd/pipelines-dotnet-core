@@ -9,6 +9,11 @@ trigger:
 pool:
   name: 'Local Pool'
 
+variables:
+  solution: '**/*.sln'  # Define the solution variable
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
+
 steps:
 - checkout: self
 
